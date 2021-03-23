@@ -4,8 +4,8 @@ import React from "react";
 const DeligatedHarvest = () => {
   const classes = useStyles();
   return (
-    <Paper className={classes.paper}>
-      <Typography component="h1" variant="h4" align="center">
+    <Paper>
+      {/* <Typography component="h1" variant="h4" align="center">
         Checkout
       </Typography>
       <React.Fragment>
@@ -40,7 +40,7 @@ const DeligatedHarvest = () => {
             </div>
           </React.Fragment>
         )}
-      </React.Fragment>
+      </React.Fragment> */}
     </Paper>
   );
 };

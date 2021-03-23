@@ -1,19 +1,20 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/core';
-import {renderRoutes, RouteConfigComponentProps} from 'react-router-config';
 import Header from 'components/common/Header';
+import DeligatedHarvest from 'pages/DeligatedHarvest';
 
-type Props = RouteConfigComponentProps<any>;
+type Props = {};
 
 const MainLayout = (props: Props) => {
-  const {route} = props;
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <Header />
       <div className={classes.wrapper}>
         <div className={classes.contentContainer}>
-          <div className={classes.content}>{renderRoutes(route!.routes)}</div>
+          <div className={classes.content}>
+            <DeligatedHarvest />
+          </div>
         </div>
       </div>
     </div>
